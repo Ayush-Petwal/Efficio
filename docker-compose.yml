@@ -1,14 +1,13 @@
-version: "3.5"
-name: "super-productive-services"
+name: "efficio-services"
 services:
   db:
     image: "postgres"
     restart: always
-    container_name: super-productive-db
+    container_name: efficio-db
     environment:
-      POSTGRES_USER: "postgres"
-      POSTGRES_DB: "super-productive"
-      POSTGRES_PASSWORD: password
+      POSTGRES_USER: "ayushpetwal"
+      POSTGRES_DB: "efficio"
+      POSTGRES_PASSWORD: Ayush<$0009>
     volumes:
       - database-data:/var/lib/postgresql-data/
     ports:
